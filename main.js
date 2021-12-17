@@ -252,7 +252,7 @@ let saper;
 
 easyBtn.addEventListener("click", () => {
   if (!board.innerHTML) {
-    saper = new Saper(board, 9, 2);
+    saper = new Saper(board, 9, 10);
     saper.init();
     easyBtn.classList.add("active");
   }
