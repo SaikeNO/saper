@@ -64,7 +64,7 @@ body {
 }
 
 .btn:nth-child(odd) {
-  background-color: #eeeeee;
+  background-color: #e0e0e0;
 }
 
 .btn--active:nth-child(odd) {
@@ -74,11 +74,18 @@ body {
 }
 
 .btn--2 {
-  color: #a8a8a8;
+  color: #c9a9a9;
 }
 
 .btn--3 {
-  color: rgb(148, 148, 148);
+  color: rgb(206, 99, 99);
+}
+.btn--4 {
+  color: rgb(211, 35, 35);
+}
+
+.btn--5 {
+  color: rgb(206, 3, 3);
 }
 
 #board {
@@ -94,8 +101,9 @@ body {
   visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 80px;
   background-color: rgba(255, 255, 255, 0.6);
+  font-size: 90px;
 }
 .overlay-win.active {
   visibility: visible;
