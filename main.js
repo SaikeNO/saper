@@ -4,8 +4,6 @@ class Saper {
     this.board = [];
     this.fields = fields;
     this.boardElem = board;
-    this.counter = document.getElementById("counter");
-    this.timer = document.getElementById("timer");
     this.indexInterval = null;
     this.flagCounter = 0;
     this.btnsElems = [];
@@ -215,11 +213,13 @@ class Saper {
   }
 
   setTime() {
-    this.counter.textContent = this.bombs;
+    const counter = document.getElementById("counter");
+    const timer = document.getElementById("timer");
+    counter.textContent = this.bombs;
     let time = 0;
 
     this.indexInterval = setInterval(() => {
-      this.timer.textContent = time;
+      timer.textContent = time;
       time++;
     }, 1000);
   }
